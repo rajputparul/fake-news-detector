@@ -14,6 +14,7 @@ This project uses a trained machine learning model to analyze news headlines and
 - Pandas
 - NumPy
 - HTML/CSS
+- gunicorn
 
 ## Features
 
