@@ -1,14 +1,10 @@
 # Fake News Detection Web App
 
-A machine learning-based web application built using Flask that classifies news as **Real** or **Fake** using Natural Language Processing (NLP).
-
----
+A machine learning-based web application built using Flask that classifies news headlines as **Real** or **Fake** using Natural Language Processing.
 
 ## Project Overview
 
-This project uses a trained machine learning model to analyze news text and predict whether it is real or fake. The application provides a simple user interface where users can input news content and get instant predictions.
-
----
+This project uses a trained machine learning model to analyze news headlines and predict whether they are real or fake. Users can enter a news headline in the web app and get an instant prediction.
 
 ## Tech Stack
 
@@ -19,39 +15,31 @@ This project uses a trained machine learning model to analyze news text and pred
 - NumPy
 - HTML/CSS
 
----
-
 ## Features
 
-- Real-time news classification
-- Clean and simple UI
-- Machine Learning model integration
-- NLP-based text processing
+- Real-time news headline classification
+- Simple and clean user interface
+- Machine learning model integration
+- NLP-based text processing using TF-IDF
 
----
+## How It Works
 
-## ⚙️ How It Works
+1. User enters a news headline.
+2. The text is converted into numerical features using TF-IDF Vectorizer.
+3. The trained Logistic Regression model predicts whether the headline is real or fake.
+4. The result is displayed on the web page.
 
-1. User enters news text
-2. Text is processed using a vectorizer
-3. Model predicts whether news is real or fake
-4. Result is displayed on the web page
+## Dataset
 
----
+This project uses the `FakeNewsNet.csv` dataset.
 
-## How to Run the Project
+The model is currently trained on the `title` column, so it works as a news headline classifier.
 
-1. Clone the repository:
-   https://github.com/YOUR_USERNAME/fake-news-detection.git
+## Model Performance
 
-2. Navigate to the project folder:
-   cd fake-news-detection
+After training the model, accuracy is displayed in the terminal.
 
-3. Install dependencies:
-   pip install -r requirements.txt
+Example:
 
-4. Run the app:
-   python app.py
-
-5. Open in browser:
-   http://127.0.0.1:5000/
+```txt
+Accuracy: 0.__
